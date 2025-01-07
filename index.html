@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foodstyle.css">
+    <title>FOOD RECIPE BOOK</title>
+</head>
+<body>
+   <header>
+      <div class="container">
+          <h1 class="logo">Delicous Recipe</h1>
+          <nav>
+            <div class="menu-icon">&#9776;</div>
+
+            <ul class="nav-list">
+                <li>Home</li>
+                <li><a href="#Recipe">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                  <button class="btn-login" id="login" onclick="openLogModal()">
+                    Login
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-register" id="register" onclick="openRegModal()">
+                    Register
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-logout" id="logout">Logout</button>
+                </li> 
+                <p style="display: inline" id="userid"></p>
+            </ul>
+          </nav>
+          
+      </div>
+   </header> 
+   <!-- ........................hero section..................... -->
+   <section class="hero">
+       <div class="hero-section">
+          <h2>Welcome to our Recipe Collection!</h2>
+          <p>Search mouth watering recipes to satisfy
+              your craving.
+          </p>
+          <form action="#" class="hero-search-box">
+            <input type="text" placeholder="search recipe">
+            <button type="submit">Search</button>
+          </form>
+       </div>
+   </section>
+   <!-- ..........................Recipe section..................... -->
+   <section class="recipes">
+       <h1 id="Recipe">Featured Recipes</h1>
+       <div class="recipe-section">
+          <div class="recipe-card">
+             <img src="dish-1.jpg" alt="food1">
+             <h2>Strawberry Custard</h2>
+             <p></p>
+             <a   onclick="recipe1ClickHandle()">View Recipe</a>
+          </div>
+          <div class="recipe-card">
+            <img src="pizza-3007395_1280.jpg" alt="food1">
+            <h2>Pizza</h2>
+            <p></p>
+            <a   onclick="recipe2ClickHandle()">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="biriyani.jpeg" alt="food1">
+            <h2>Chicken Biriyani</h2>
+            <p></p>
+            <a   onclick="recipe3ClickHandle()">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="vada pav.jpeg" alt="food1">
+            <h2>Vada pav</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="dosa.jpeg" alt="food1">
+            <h2>Dosa</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="gupchup.jpeg" alt="food1">
+            <h2>Gupchup</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="crab curry.jpeg" alt="food1">
+            <h2>Crab Curry</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="dahibara.jpeg" alt="food1">
+            <h2>Dahibara</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="rasogola.jpeg" alt="food1">
+            <h2>Rasogola</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+         <div class="recipe-card">
+            <img src="ramen.jpg" alt="food1">
+            <h2>Ramen</h2>
+            <p></p>
+            <a href="#">View Recipe</a>
+         </div>
+       </div>
+   </section> 
+   <footer>
+      <div>
+         <p>&copy; 2025 Delicious Recipes</p>
+      </div>
+   </footer>
+   <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Register Now</h2>
+        <form id="registerForm" class="form">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+
+          <input
+            type="email"
+            id="regEmail"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <input
+            type="password"
+            id="regPassword"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" class="btn-primary">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm" class="form">
+          <input
+            type="email"
+            id="logEmail"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <input
+            type="password"
+            id="logPassword"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit" class="btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

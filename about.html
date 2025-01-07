@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Food Recipes</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .chef-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .chef-card img {
+            width: 100px;
+            height: 100px;
+             border-radius: 10px;
+           
+        }
+
+        .chef-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .contact-details {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #f39c12;
+            font-size: 1.2em;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header div{
+            color: white;
+            font-size: 25px;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about-section h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .about-section h2 {
+            font-size: 28px;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        .about-img {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>Delicius Recipes</div>
+        <nav>
+            <ul>
+                <li><a href="food2.html">Home</a></li>
+                <!-- <li><a href="#Recipe">Recipes</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h1>MEET OUR MASTERCHEF!</h1>
+        <div class="container">
+            <!-- Chef 1 -->
+            <div class="chef-card">
+                <img src="udaya.jpg" alt="Chef 1">
+                <div class="chef-name">Udayakara sahoo</div>
+                <div class="contact-details">Phone: 7752089765<br>Email: udaya@example.com</div>
+                <div class="rating">★★★★★</div>
+            </div>
+    
+            <!-- Chef 2 -->
+            <div class="chef-card">
+                <img src="soumya.jpg" alt="Chef 2">
+                <div class="chef-name">Soumyajit singh</div>
+                <div class="contact-details">Phone: 9876543267<br>Email: jane.soumya@example.com</div>
+                <div class="rating">★★★★★</div>
+            </div>
+    
+            <!-- Chef 3 -->
+            <div class="chef-card">
+                <img src="ashu.jpg" alt="Chef 3">
+                <div class="chef-name">Ashutosh prusty</div>
+                <div class="contact-details">Phone: 7754087654<br>Email: ashu@example.com</div>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+        <h1>About Our Food Recipes</h1>
+        <p>Welcome to Food Recipes! Here we share a wide variety of recipes, from quick and easy meals to gourmet delights, suitable for all skill levels. Whether you're a beginner or a seasoned chef, you’ll find something that will inspire you.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to help home cooks discover the joy of creating delicious meals. We believe food is an experience that should be shared, and we aim to make cooking fun and accessible to everyone!</p>
+
+        <h2>What We Offer</h2>
+        <p>We offer a collection of handpicked recipes that cater to different tastes, dietary needs, and occasions. From simple weekday meals to special occasion dishes, you'll find everything you need to bring your cooking to the next level.</p>
+
+        <img src="logo.png" alt="Cooking Recipe" class="about-img">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Food Recipes | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

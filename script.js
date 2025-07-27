@@ -49,7 +49,7 @@ function loginHandleSubmit(e) {
   if (user && user.password === password) {
    
     alert("Log in Successful! Welcome....");
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
  
     signIn();
   } else {
